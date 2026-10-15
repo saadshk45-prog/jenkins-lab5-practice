@@ -26,7 +26,7 @@ pipeline {
             steps {
                 bat '''
                     set "PATH=C:\\Users\\Admin\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin;%PATH%"
-                    docker build -t jenkins-end-to-end-project-lab5 .
+                    docker build -t jenkins-lab5-practice .
                 '''
             }
         }
@@ -36,10 +36,10 @@ pipeline {
                 bat '''
                     set "PATH=C:\\Users\\Admin\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin;%PATH%"
 
-                    docker stop jenkins-pipeline-lab4-container 2>nul
-                    docker rm jenkins-pipeline-lab4-container 2>nul
+                    docker stop jenkins-lab5-practice-container 2>nul
+                    docker rm jenkins-lab5-practice-container 2>nul
 
-                    docker run -d --name jenkins-pipeline-lab4-container -p 8083:80 jenkins-pipeline-lab4
+                    docker run -d --name jenkins-lab5-practice-container -p 8083:80 jenkins-lab5-practice
                 '''
             }
         }

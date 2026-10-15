@@ -1,10 +1,71 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Jenkins end-to-end project Lab 5</title>
+    <title>ShoeStore</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f4f4;
+            text-align: center;
+        }
+
+        header {
+            background: #222;
+            color: white;
+            padding: 25px;
+        }
+
+        .container {
+            padding: 40px;
+        }
+
+        .shoe {
+            background: white;
+            width: 280px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        .shoe h2 {
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        button {
+            background: #222;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Hello from Jenkins end-to-end project </h1>
-    <p>My Jenkins end-to-end project is working.</p>
+
+<header>
+    <h1>👟 ShoeStore</h1>
+    <p>Jenkins CI/CD Demo</p>
+</header>
+
+<div class="container">
+
+    <div class="shoe">
+        <h2>Air Runner</h2>
+        <p>Comfortable Running Shoes</p>
+        <p class="price">₹1,999</p>
+        <button>Buy Now</button>
+    </div>
+
+</div>
+
 </body>
 </html>
